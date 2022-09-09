@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+void great(int a)
+{
+    if(a>=18)
+    {
+        cout<<"eligible to vote";
+    }
+}
+
+int main()
+{
+    int a;
+    cin>>a;
+    great(a);
+    return 0;
+}
