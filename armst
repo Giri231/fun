@@ -1,0 +1,32 @@
+#include<iostream>
+
+using namespace std;
+
+int armstr(int a)
+{
+   int ld;
+   int sum=0;
+   int num=a;
+   while(num!=0)
+   {
+    ld=num%10;
+    sum=sum+ld*ld*ld;
+    num=num/10;
+   }
+    if(a==sum)
+    {
+        return 0;
+    }
+    else
+    return 1;
+}
+
+int main()
+{
+    int a;
+    cin>>a;
+   int n= armstr(a);
+   cout<<n;
+   return 0;
+    
+}
