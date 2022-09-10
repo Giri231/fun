@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int convert(int a)
+{
+    int bno=0,f=1;
+    while(a!=0)
+    {
+        int rem=a%2;
+        bno =bno +rem*f;
+        f=f*10;
+        a=a/2;
+        
+    }
+    return bno; 
+    
+    
+}
+
+int main()
+{
+    int a,n;
+    cin>>a;
+   n= convert(a);
+    cout<<n;
+    return 0;
+    
+}
