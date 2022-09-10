@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int anagram(string s1,string s2)
+{
+    for(int i=0;i<s1.length();i++)
+    {
+        for(int j=0;j<s2.length();j++)
+        {
+             if(s1[i]==s2[j])
+             return 0;
+             else 
+             return 1;
+        }
+    }
+   
+}
+
+int main()
+{
+    string s1="spear";
+    string s2="pears";
+    
+    cout<<anagram(s1,s2);
+    return 0;
+}
