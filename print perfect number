@@ -1,0 +1,48 @@
+#include<iostream>
+
+using namespace std;
+
+int sequence(int a )
+{
+    int i;
+    int sum=0;
+    for(i=1;i<a;i++)
+    {
+        if(a%i==0)
+        {
+            sum+=i;
+            
+        }
+    }   
+     if(sum ==a)
+    return 1;
+    else
+    return 0;
+   
+
+}
+void perfectnumbers(int stlimit , int enlimit)
+{
+    while(stlimit <= enlimit)
+    {
+        if(sequence(stlimit))
+        {
+            cout<<stlimit<<"\n";
+        }
+        stlimit++;
+    }
+}
+
+int main()
+{
+    int stlimit , enlimit;
+    cin>>stlimit;
+    cin>>enlimit;
+    perfectnumbers(stlimit,enlimit);
+    return 0;
+    
+    
+    
+    
+}
+
